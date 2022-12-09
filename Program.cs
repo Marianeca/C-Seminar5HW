@@ -4,11 +4,11 @@
 double[] array = new double[5];
 
 for (int i = 0; i < array.Length; i++)
-    array[i] = new Random().Next(100);
+    array[i] = new Random().Next(100) / 10.0;
 Print(array);
 
-double max = 0;
-double min = 0;
+double max = array[0];
+double min = array[0];
 
 foreach (double i in array)
 {
